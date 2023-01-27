@@ -409,7 +409,7 @@ msgstr "Entre em contato"
 #: patterns/call-to-action.php:15
 msgctxt "sample content for call to action"
 msgid "Got any book recommendations?"
-msgstr "Tem alguma recomendação de livro?"
+msgstr "Ta me ouvindo?"
 
 #: patterns/call-to-action.php
 msgctxt "Pattern title"
