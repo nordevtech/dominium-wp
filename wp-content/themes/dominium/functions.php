@@ -15,6 +15,9 @@ function dominium_setup(){
 add_action('wp_enqueue_scripts', 'dominium_scripts');
 function dominium_scripts(){
     wp_enqueue_style('dominium-bs', get_template_directory_uri() . '/assets/css/bootstrap.min.css');
+
+    wp_enqueue_script('popper,', 'https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js', array('jquery'));
+    wp_enqueue_script('dominium-bs', get_template_directory_uri() . '/assets/js/bootstrap.min.js', array('popper'));
 }
 
 }
