@@ -8,9 +8,7 @@
                 <p><?php the_content()?></p>
             <?php endwhile; endif; ?>
             </div>
-        <div class="col-sm-4">
-            <h1>testando</h1>
-        </div>
+
     </div>
 </div>
 
