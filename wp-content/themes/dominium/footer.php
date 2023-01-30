@@ -1,5 +1,5 @@
 <?php wp_footer(); ?>
-<footer>
+    <footer>
         <div class="container">
             <div class="footer-column1">
                 <div class="logo">
@@ -26,8 +26,8 @@
                 </ul>
             </div>
         </div>
-        
     </footer>
+    
     <div class="rodape">
         <div class="container">
             <div class="plataformas">
@@ -47,6 +47,5 @@
             </div>
         </div>
     </div>
-
 </body>
 </html>

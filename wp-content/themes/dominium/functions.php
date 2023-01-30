@@ -16,9 +16,11 @@ function dominium_setup(){
 // Função para carregar bootstrap
 add_action('wp_enqueue_scripts', 'dominium_scripts');
 function dominium_scripts(){
-    wp_enqueue_style('dominium-bs', get_template_directory_uri() . '/assets/css/style.css');
+    wp_enqueue_style('dominium-global', get_template_directory_uri() . '/assets/css/style.css');
+    wp_enqueue_style('dominium-header', get_template_directory_uri() . '/assets/css/header.css');
+    wp_enqueue_style('dominium-footer', get_template_directory_uri() . '/assets/css/header.css');
+    
     wp_enqueue_style('font', 'https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;500&display=swap');
-
 }
 
 function theme_image( $image ) {
