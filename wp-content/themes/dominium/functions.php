@@ -16,10 +16,13 @@ function dominium_setup(){
 // Função para carregar bootstrap
 add_action('wp_enqueue_scripts', 'dominium_scripts');
 function dominium_scripts(){
-    wp_enqueue_style('dominium-bs', get_template_directory_uri() . '/assets/css/bootstrap.min.css');
+    wp_enqueue_style('dominium-bs', get_template_directory_uri() . '/assets/css/style.css');
+    wp_enqueue_style('font', 'https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;500&display=swap');
 
-    wp_enqueue_script('popper,', 'https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js', array('jquery'), '1.0', true);
-    wp_enqueue_script('dominium-bs', get_template_directory_uri() . '/assets/js/bootstrap.min.js', array('popper'), '1.0', true);
 }
+
+function theme_image( $image ) {
+    return get_theme_file_uri( '/assets/imagens/' . $image );
+  }
 
 }

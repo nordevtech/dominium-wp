@@ -7,24 +7,27 @@
         <?php wp_head(); ?>
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">Navbar</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <?php 
-                        wp_nav_menu(
-                            array(
-                                'menu' => 'main_nav',
-                                'menu_class' => 'navbar-nav',
-                                'theme_location' => 'primary',
-                                'container' => 'false',
-                                'walker' => new WP_Bootstrap_Navwalker()
-                            )
-                        );
-                    ?>
+    <header>
+            <div class="container">
+                <div class="logo">
+                    <img src="<?php echo theme_image('logo-dominium.svg') ?>" alt="Logo Colégio Dominium">
                 </div>
+                <nav>
+                    <input type="checkbox" id="click">
+                    <label for="click" class="menu-btn">
+                    <i class="fas fa-bars"></i>
+                    </label>
+                    <ul>
+                        <li><a href="index.html" id="atual" class="active">Página Inicial</a></li>
+                        <li><a href="sobre-nos.html">Sobre nós</a></li>
+                        <li><a href="ensino.html">Ensino</a></li>
+                        <li><a href="calendario.html">Calendário</a></li>
+                        <li><a href="noticias.html">Notícias</a></li>
+                        <li><a href="galeria.html">Galeria</a></li>
+                        <li><a href="acervo.html" class="nav-border">Acervo</a></li>
+                        <li><a href="livraria.html" class="nav-border">Livraria</a></li>
+                        <li><a href="matricula.html" class="nav-border">Matrícula</a></li>
+                    </ul>
+                </nav>
             </div>
-        </nav>
+        </header>
